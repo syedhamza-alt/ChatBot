@@ -21,12 +21,14 @@
         android:layout_marginBottom="-1dp"></androidx.recyclerview.widget.RecyclerView>
 
     <EditText
+
         android:id="@+id/welcomeText"
+        android:background="@drawable/rounded_corner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
         android:layout_marginStart="-5dp"
         android:layout_marginTop="282dp"
-        android:layout_centerInParent="true"
         android:gravity="center"
         android:text="Welcome to ChatAPT\nTry it now:"
         android:textSize="28sp"></EditText>
@@ -58,6 +60,9 @@
             android:layout_height="48dp"
             android:layout_alignParentEnd="true"
             android:layout_centerInParent="true"
+            android:layout_marginLeft="-5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/rounded_corner"
             android:contentDescription="@android:string/yes"
             android:src="@drawable/baseline_send_24"></ImageButton>
     </RelativeLayout>

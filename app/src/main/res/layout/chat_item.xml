@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    >
 
     <LinearLayout
         android:id="@+id/left_chat_view"
@@ -14,18 +17,14 @@
         android:padding="10dp">
 
         <TextView
-            android:id="@+id/left_chat"
+            android:id="@+id/left_chat_Text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/white"
             android:textSize="18sp"
 
 
-            ></TextView>
-
-
-
-
+            />
     </LinearLayout>
 
     <LinearLayout
@@ -40,10 +39,11 @@
         android:layout_alignParentEnd="true"
         android:background="@drawable/rounded_corner"
         android:backgroundTint="@color/purple_500"
-        android:padding="10dp">
+        android:padding="10dp"
+        tools:ignore="RelativeOverlap">
 
         <TextView
-            android:id="@+id/right_chat"
+            android:id="@+id/right_chat_Text"
             android:layout_width="wrap_content"
             android:background="@drawable/rounded_corner"
             android:layout_height="wrap_content"
@@ -51,7 +51,7 @@
             android:textSize="18sp"
 
 
-            ></TextView>
+            />
 
 
     </LinearLayout>
